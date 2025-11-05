@@ -8,12 +8,15 @@
   automerge: true,
   platformAutomerge: true,
   "git-submodules": {
-    enabled: true,
+    enabled: true
   },
   labels: [
     "dependency upgrade"
   ],
   minimumReleaseAge : "7 days",
+  constraints: {
+    npm: "11.4.0"
+  },
   packageRules: [
     {
       labels: [
@@ -30,7 +33,7 @@
       ],
       matchPackageNames: [
         "/line-openapi/"
-      ],
+      ]
     },
     {
       matchFileNames: [
@@ -43,8 +46,8 @@
         fileFilters: [
           "package.json",
           "package-lock.json"
-        ],
-      },
-    },
-  ],
+        ]
+      }
+    }
+  ]
 }
