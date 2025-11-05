@@ -16,12 +16,6 @@
   minimumReleaseAge : "7 days",
   postUpdateOptions: ["npmInstallTwice"],
   ignoreDeps: ["axios"],
-  postUpgradeTasks: {
-    commands: [
-      "npm install --no-audit --no-fund"
-    ],
-    executionMode: "branch"
-  },
   forkProcessing: "enabled",
   packageRules: [
     {
