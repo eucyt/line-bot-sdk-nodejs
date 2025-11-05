@@ -16,7 +16,6 @@
   minimumReleaseAge : "7 days",
   schedule: ["every 1 hour"],
   postUpdateOptions: ["npmInstallTwice"],
-  forkProcessing: "enabled",
   packageRules: [
     {
       labels: [
